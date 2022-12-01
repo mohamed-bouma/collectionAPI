@@ -147,11 +147,11 @@ public class TypeDAO extends DAO<Type, Type> {
     }
 
 
-    public static List<Caracteristique> getCaracteristiquesTypes(Type type) {
+    public static ArrayList<Caracteristique> getCaracteristiquesTypes(Type type) {
         String procedureStockee;
         ResultSet rs;
 
-        List<Caracteristique> typecaracList = new ArrayList<>();
+        ArrayList<Caracteristique> typecaracList = new ArrayList<>();
 
 
         procedureStockee = "{call dbo.ps_get_type_id (?)}";
